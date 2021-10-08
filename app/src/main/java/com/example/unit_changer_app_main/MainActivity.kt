@@ -13,15 +13,18 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         binding.btn1.setOnClickListener(){
             replaceFragment(Fragment1())
+            binding.textView4.text = ""
 
 
         }
         binding.btn2.setOnClickListener(){
             replaceFragment(Fragment2())
+            binding.textView4.text = ""
 
         }
         binding.btn3.setOnClickListener(){
             replaceFragment(Fragment3())
+            binding.textView4.text = ""
 
         }
 
