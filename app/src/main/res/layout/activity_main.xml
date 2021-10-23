@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFA500"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -18,44 +19,53 @@
         android:id="@+id/btn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button1"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="50dp"
         android:layout_marginStart="30dp"
-        />
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/round_button"
+
+        android:text="Length"
+        android:textColor="#FFFFFF" />
 
     <Button
         android:id="@+id/btn2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button2"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
+        android:layout_marginEnd="30dp"
         android:layout_marginBottom="50dp"
-        android:layout_marginEnd="30dp" />
+        android:background="@drawable/round_button"
+        android:text="Volume"
+        android:textColor="#FFFFFF" />
+
     <Button
         android:id="@+id/btn3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button3"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
+        android:layout_marginEnd="160dp"
         android:layout_marginBottom="50dp"
-        android:layout_marginEnd="160dp" />
+        android:background="@drawable/round_button"
+        android:text="Weight"
+        android:textColor="#FFFFFF" />
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/Mainmsg"
+        android:layout_width="341dp"
+        android:layout_height="146dp"
         android:layout_alignBottom="@+id/con"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="125dp"
-        android:layout_marginTop="334dp"
-        android:layout_marginEnd="162dp"
-        android:layout_marginBottom="247dp"
-        android:text="CHOOSE A BUTTON" />
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="313dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="141dp"
+        android:text="Choose A Unit Type"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp" />
 
 
 </RelativeLayout>

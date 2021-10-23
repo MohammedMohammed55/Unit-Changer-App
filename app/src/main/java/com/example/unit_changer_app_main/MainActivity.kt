@@ -2,8 +2,11 @@ package com.example.unit_changer_app_main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import androidx.core.view.isVisible
 import com.example.unit_changer_app_main.databinding.ActivityMainBinding
 import androidx.fragment.app.Fragment
+
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding : ActivityMainBinding
@@ -11,24 +14,35 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
+
         binding.btn1.setOnClickListener(){
             replaceFragment(Fragment1())
-            binding.textView4.text = ""
+            binding.Mainmsg.text = ""
+
 
 
         }
         binding.btn2.setOnClickListener(){
             replaceFragment(Fragment2())
-            binding.textView4.text = ""
+            binding.Mainmsg.text = ""
+
 
         }
         binding.btn3.setOnClickListener(){
             replaceFragment(Fragment3())
-            binding.textView4.text = ""
+            binding.Mainmsg.text = ""
+
 
         }
 
+
+
+
+
     }
+
     private fun replaceFragment(fragment : Fragment){
         val fragman = supportFragmentManager
         val fragtrans = fragman.beginTransaction()
